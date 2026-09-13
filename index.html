@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Марія & Арсен — Запрошення на весілля</title>
+<meta name="description" content="Запрошуємо вас на осіннє весілля Марія та Арсена — 31 жовтня 2026, м.Івано-Франківськ, вул. Миколайчука 16а, 2 поверх, приміщення Цервки Нового Життя">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand">Марія <span class="nav__amp">&</span> Арсен</a>
+      <div class="nav__date">31.10.2026</div>
+      <ul class="nav__links">
+        <li><a href="#details">Деталі</a></li>
+        <li><a href="#dresscode">Дрес-код</a></li>
+        <li><a href="#rsvp">Запрошення</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Відкрити меню" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav">
+      <a href="#details">Деталі</a>
+      <a href="#dresscode">Дрес-код</a>
+      <a href="#rsvp">Підтвердження присутності</a>
+      <a href="#contacts">Контакти</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero">
+    <div class="hero__frame">
+      <!-- decorative branch SVG top right -->
+      <svg class="hero__branch" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="branch-path" d="M 40 300 C 80 260 110 200 170 170 C 210 145 250 120 280 70" stroke="#6B2C2A" stroke-width="1.4" stroke-linecap="round" pathLength="1"/>
+        <path class="branch-path2" d="M 170 170 C 150 130 140 90 160 50" stroke="#6B7352" stroke-width="1.1" stroke-linecap="round" pathLength="1"/>
+        <path class="branch-path2" d="M 170 170 C 190 150 220 135 250 110" stroke="#A64A2A" stroke-width="1.1" stroke-linecap="round" pathLength="1"/>
+        <!-- leaves -->
+        <g class="leaf" opacity="0.95"><ellipse cx="282" cy="68" rx="18" ry="11" transform="rotate(-22 282 68)" fill="#A64A2A"/><line x1="268" y1="72" x2="296" y2="64" stroke="#1C1914" stroke-width="0.6"/></g>
+        <g class="leaf" opacity="0.9"><ellipse cx="252" cy="108" rx="15" ry="9.5" transform="rotate(-14 252 108)" fill="#C99A3A"/><line x1="240" y1="111" x2="264" y2="105" stroke="#1C1914" stroke-width="0.5"/></g>
+        <g class="leaf" opacity="0.9"><ellipse cx="158" cy="48" rx="13" ry="8.5" transform="rotate(28 158 48)" fill="#6B7352"/><line x1="148" y1="52" x2="168" y2="44" stroke="#1C1914" stroke-width="0.5"/></g>
+        <g class="leaf" opacity="0.85"><ellipse cx="125" cy="155" rx="12" ry="8" transform="rotate(18 125 155)" fill="#D9CFC0" stroke="#C4B8A6" stroke-width="0.7"/><line x1="115" y1="158" x2="135" y2="152" stroke="#1C1914" stroke-width="0.45"/></g>
+        <g class="leaf" opacity="0.85"><ellipse cx="195" cy="138" rx="10" ry="7" transform="rotate(-32 195 138)" fill="#A64A2A"/><line x1="187" y1="141" x2="203" y2="135" stroke="#1C1914" stroke-width="0.45"/></g>
+      </svg>
+
+      <p class="hero__eyebrow reveal">запрошення на осіннє весілля</p>
+
+      <h1 class="hero__title">
+        <span class="hero__name hero__name--olena reveal delay-1">Марія</span>
+        <span class="hero__amp reveal delay-2">&</span>
+        <span class="hero__name hero__name--andrii reveal delay-3">Арсен</span>
+      </h1>
+
+      <div class="hero__meta reveal delay-4">
+        <span class="hero__date">31 жовтня 2026</span>
+        <span class="hero__dot"></span>
+        <span>субота</span>
+      </div>
+
+      <!-- arch image with cat placeholder -->
+      <div class="hero__arch reveal delay-5">
+        <div class="hero__arch-inner">
+          <img class="hero__arch-img" src="./assets/photo_2026-09-08_20-21-24.jpg" alt="Пікнік" width="800" height="1000" loading="eager">
+          <div class="hero__arch-overlay" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="hero__actions reveal delay-5">
+        <a href="#details" class="btn btn--primary">Деталі весілля</a>
+        <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=%D0%92%D0%B5%D1%81%D1%96%D0%BB%D0%BB%D1%8F+%D0%9C%D0%B0%D1%80%D1%96%D1%97+%D1%82%D0%B0+%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0&dates=20261017T120000Z/20261017T190000Z&details=%D0%97%D0%B0%D0%BC%D1%96%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81+Veranda+on+River&location=%D0%BC.%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA,+%D0%B2%D1%83%D0%BB.%D0%9C%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%D1%87%D1%83%D0%BA%D0%B0+16%D0%B0" target="_blank" rel="noopener" class="btn btn--ghost">Зберегти дату</a>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>гортай</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- DETAILS -->
+  <section id="details" class="section section--dark">
+    <div class="section__inner">
+      <div class="details__grid">
+        <div class="details__left reveal">
+          <p class="section__kicker">коли й де</p>
+
+          <div class="details__cards">
+            <div class="detail-card">
+              <div class="detail-card__icon" aria-hidden="true">◐</div>
+              <div>
+                <div class="detail-card__label">Дата і час</div>
+                <div class="detail-card__value">31 жовтня 2026, субота</div>
+              </div>
+            </div>
+            <div class="detail-card">
+              <div class="detail-card__icon" aria-hidden="true">◎</div>
+              <div>
+                <div class="detail-card__label">Локація</div>
+                <div class="detail-card__value">Церква Нове Життя</div>
+                <div class="detail-card__sub">м. Івано-Франківськ, вул. Миколайчука 16а</div>
+                <a class="detail-card__link" href="https://maps.google.com/?q=м.Івано-Франківськ+Миколайчука+16а" target="_blank" rel="noopener">Відкрити на мапі ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="details__right reveal delay-1">
+          <div class="timeline">
+            <div class="timeline__line" aria-hidden="true"></div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__time">11:30</div>
+              <div class="timeline__text"><strong>Збір гостей</strong></div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot timeline__dot--clay"></div>
+              <div class="timeline__time">12:00</div>
+              <div class="timeline__text"><strong>Церемонія</strong></div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__time">15:00-19:30</div>
+              <div class="timeline__text"><strong>Офіційна частина: Фуршет, конкурси</strong></div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__time">19:30-20:00</div>
+              <div class="timeline__text"><strong>Неформальна частина (танці, спілкування, прощання з нареченими)</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section id="dresscode" class="section section--linen">
+    <div class="section__inner">
+      <div class="dresscode__grid">
+        <div class="dresscode__text reveal">
+          <p class="section__kicker section__kicker--dark">дрес-код</p>
+          <h2 class="section__title">Осіння палітра</h2>
+          <p class="section__lead">Будемо раді, якщо підтримаєте палітру — теплі відтінки осені.</p>
+          <div class="dresscode__tags">
+          </div>
+        </div>
+
+        <div class="dresscode__palette reveal delay-1">
+          <div class="palette">
+            <button class="palette__item" data-hex="#A64A2A" aria-label="Копіювати колір темно-оранжевий #A64A2A">
+              <span class="palette__circle" style="background:#A64A2A"></span>
+              <span class="palette__name">темно-оранжевий</span>
+              <span class="palette__hex">#A64A2A</span>
+            </button>
+            <button class="palette__item" data-hex="#C99A3A" aria-label="Копіювати колір жовтий #C99A3A">
+              <span class="palette__circle" style="background:#C99A3A"></span>
+              <span class="palette__name">жовтий</span>
+              <span class="palette__hex">#C99A3A</span>
+            </button>
+            <button class="palette__item" data-hex="#6B7352" aria-label="Копіювати колір темно-зелений #6B7352">
+              <span class="palette__circle" style="background:#6B7352"></span>
+              <span class="palette__name">темно-зелений</span>
+              <span class="palette__hex">#6B7352</span>
+            </button>
+            <button class="palette__item" data-hex="#6B2C2A" aria-label="Копіювати колір бордовий #6B2C2A">
+              <span class="palette__circle" style="background:#6B2C2A"></span>
+              <span class="palette__name">бордовий</span>
+              <span class="palette__hex">#6B2C2A</span>
+            </button>
+            <button class="palette__item" data-hex="#D9CFC0" aria-label="Копіювати колір льон #D9CFC0">
+              <span class="palette__circle" style="background:#D9CFC0; border:1px solid #C4B8A6"></span>
+              <span class="palette__name">льон</span>
+              <span class="palette__hex">#D9CFC0</span>
+            </button>
+            <button class="palette__item" data-hex="#542d05" aria-label="Копіювати колір льон #D9CFC0">
+              <span class="palette__circle" style="background:#542d05; border:1px solid #542d05"></span>
+              <span class="palette__name">коричневий</span>
+              <span class="palette__hex">#542d05</span>
+            </button>
+          </div>
+          <p class="palette__note">* кольори на екрані можуть відрізнятися — орієнтуйся на назви</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="section section--rsvp">
+    <div class="section__inner">
+      <div class="rsvp__grid reveal">
+        <a class="rsvp__image-wrap" href="https://forms.gle/XJD9YUDeCzfRnRfE8" target="_blank" rel="noopener" aria-label="Відкрити Google Форму для підтвердження">
+          <img src="./assets/photo_2026-09-05_19-00-34.jpg" alt="Форма" width="600" height="450" loading="lazy">
+          <div class="rsvp__image-overlay">
+            <span class="rsvp__image-label">Натисни, щоб заповнити форму</span>
+            <span class="rsvp__image-sub">відкриється Google Форма</span>
+          </div>
+        </a>
+        <div class="rsvp__card">
+          <p class="section__kicker section__kicker--dark">підтвердження</p>
+          <h2 class="section__title section__title--small">Будемо вдячні<br>за відповідь до 10 жовтня</h2>
+          <a class="btn btn--primary btn--wide" href="https://forms.gle/XJD9YUDeCzfRnRfE8" target="_blank" rel="noopener">Заповнити Google Форму</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section id="contacts" class="section section--linen section--contacts">
+    <div class="section__inner">
+      <div class="contacts__header reveal">
+        <h2 class="section__title">Зв'язок</h2>
+        <p class="section__lead">З будь-яких питань — пишіть або дзвоніть. Найшвидше відповідаємо в Telegram.</p>
+      </div>
+
+      <div class="contacts__grid">
+        <div class="contact-card reveal">
+          <div class="contact-card__top">
+            <div class="contact-card__avatar" aria-hidden="true">М</div>
+            <div>
+              <div class="contact-card__name">Марія</div>
+              <div class="contact-card__role">наречена</div>
+            </div>
+            <div class="contact-card__leaf" aria-hidden="true">❦</div>
+          </div>
+          <div class="contact-card__links">
+            <a class="contact-card__link" href="tel:+380956012204">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.7L8 11a16 16 0 0 0 5 5l1.6-1.9a2 2 0 0 1 1.7-.6l3 .5A2 2 0 0 1 22 16.9z"/></svg>
+              +380 95 601 22 04
+            </a>
+            <a class="contact-card__link contact-card__link--tg" href="https://t.me/manetsmaria" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11L3 5l4 6 3 7 3-5 8-2z"/><path d="M7 11l10-6"/></svg>
+              @manetsmaria
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card reveal delay-1">
+          <div class="contact-card__top">
+            <div class="contact-card__avatar contact-card__avatar--alt">А</div>
+            <div>
+              <div class="contact-card__name">Арсен</div>
+              <div class="contact-card__role">наречений</div>
+            </div>
+            <div class="contact-card__leaf" aria-hidden="true">❦</div>
+          </div>
+          <div class="contact-card__links">
+            <a class="contact-card__link" href="tel:+380950320638">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.7L8 11a16 16 0 0 0 5 5l1.6-1.9a2 2 0 0 1 1.7-.6l3 .5A2 2 0 0 1 22 16.9z"/></svg>
+              +380 95 032 06 38
+            </a>
+            <a class="contact-card__link contact-card__link--tg" href="https://t.me/ThaPeaceOfMind" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11L3 5l4 6 3 7 3-5 8-2z"/><path d="M7 11l10-6"/></svg>
+              @ThaPeaceOfMind
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__names">Марія & Арсен</div>
+      <div class="footer__date">31 жовтня 2026</div>
+      <p class="footer__text">До зустрічі! 😊</p>
+      <a href="#hero" class="footer__top">Догори ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
