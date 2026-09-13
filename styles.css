@@ -176,10 +176,10 @@ body::before{
 .hero__date{font-weight:600;letter-spacing:.04em}
 .hero__dot{width:4px;height:4px;border-radius:50%;background:var(--clay)}
 
-.hero__arch{margin:28px auto 0;max-width:560px}
+.hero__arch{margin:18px auto 0;max-width:560px}
 .hero__arch-inner{
   position:relative;
-  border-radius:999px 999px 22px 22px;
+  border-radius: 76px 76px 22px 22px;
   overflow:hidden;
   padding:6px;
   background:var(--cream);
@@ -188,7 +188,7 @@ body::before{
 }
 .hero__arch-img{
   width:100%;height:440px;object-fit:cover;
-  border-radius:999px 999px 16px 16px;
+  border-radius:72px 72px 16px 16px;
   filter: saturate(1.05) contrast(1.02);
 }
 .hero__arch-overlay{
