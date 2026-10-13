@@ -19,6 +19,7 @@
       <div class="nav__date">31.10.2026</div>
       <ul class="nav__links">
         <li><a href="#details">Деталі</a></li>
+        <li><a href="#break">Перерва</a></li>
         <li><a href="#dresscode">Дрес-код</a></li>
         <li><a href="#rsvp">Запрошення</a></li>
         <li><a href="#contacts">Контакти</a></li>
@@ -29,6 +30,7 @@
     </div>
     <div class="nav__mobile" id="mobileNav">
       <a href="#details">Деталі</a>
+      <a href="#break">Перерва 13:00–15:00</a>
       <a href="#dresscode">Дрес-код</a>
       <a href="#rsvp">Підтвердження присутності</a>
       <a href="#contacts">Контакти</a>
@@ -126,8 +128,13 @@
             </div>
             <div class="timeline__item">
               <div class="timeline__dot timeline__dot--clay"></div>
-              <div class="timeline__time">12:00</div>
+              <div class="timeline__time">12:00-13:00</div>
               <div class="timeline__text"><strong>Церемонія</strong></div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot timeline__dot--clay"></div>
+              <div class="timeline__time">13:00-15:00</div>
+              <div class="timeline__text"><strong>Перерва</strong><span>добірка місць поруч — <a class="timeline__link" href="#break">де відпочити ↓</a></span></div>
             </div>
             <div class="timeline__item">
               <div class="timeline__dot"></div>
@@ -142,6 +149,71 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- BREAK 13:00-15:00 -->
+  <section id="break" class="section section--break">
+    <div class="section__inner">
+      <div class="break__header reveal">
+        <p class="section__kicker section__kicker--dark">13:00–15:00 · перерва</p>
+        <h2 class="section__title">Де відпочити поруч</h2>
+        <p class="section__lead">Після церемонії буде перерва до 15:00. Зібрали місця неподалік церкви (вул. Миколайчука, 16а) — кава, перекус або прогулянка. Відстань приблизна, точний маршрут уточнюйте в навігаторі.</p>
+      </div>
+
+      <div class="break__grid">
+        <article class="break-card reveal">
+          <div class="break-card__top">
+            <span class="break-card__tag">кава</span>
+            <span class="break-card__dist">~2,0 км · ~4 хв авто</span>
+          </div>
+          <h3 class="break-card__name">Аромація</h3>
+          <p class="break-card__addr">вул. Володимира Івасюка, 21В, Івано-Франківськ</p>
+          <a class="break-card__link" href="https://maps.app.goo.gl/SfXe5b4vs7AZGRBX9?g_st=ic" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>
+        </article>
+
+        <article class="break-card reveal delay-1">
+          <div class="break-card__top">
+            <span class="break-card__tag">торговий центр</span>
+            <span class="break-card__dist">~1,1 км · ~3 хв авто</span>
+          </div>
+          <h3 class="break-card__name">ТЦ Велес</h3>
+          <p class="break-card__addr">вул. Вовчинецька 225, р-н Позитрон, Івано-Франківськ</p>
+          <a class="break-card__link" href="https://maps.app.goo.gl/i3HyYArYfpNir4WS8?g_st=it" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>
+        </article>
+
+        <article class="break-card reveal">
+          <div class="break-card__top">
+            <span class="break-card__tag">бар</span>
+            <span class="break-card__dist">~1,0 км · ~3 хв авто</span>
+          </div>
+          <h3 class="break-card__name">РУУМБАРБАР</h3>
+          <p class="break-card__addr">вул. Вовчинецька, 188, Івано-Франківськ</p>
+          <a class="break-card__link" href="https://maps.app.goo.gl/exhHryjXGXd7DJVD6?g_st=ic" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>
+        </article>
+
+        <article class="break-card reveal delay-1">
+          <div class="break-card__top">
+            <span class="break-card__tag">прогулянка</span>
+            <span class="break-card__dist">~1,3 км · ~3 хв авто</span>
+          </div>
+          <h3 class="break-card__name">Річка Бистриця Надвірнянська</h3>
+          <p class="break-card__addr">набережна, Івано-Франківськ</p>
+          <a class="break-card__link" href="https://maps.app.goo.gl/d9iC8TUYQ3tYq62T6?g_st=ic" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>
+        </article>
+
+        <article class="break-card reveal">
+          <div class="break-card__top">
+            <span class="break-card__tag">пекарня</span>
+            <span class="break-card__dist break-card__dist--near">~0,2 км · поруч</span>
+          </div>
+          <h3 class="break-card__name">Пекарський</h3>
+          <p class="break-card__addr">вул. Івана Миколайчука, 30, Івано-Франківськ</p>
+          <a class="break-card__link" href="https://maps.app.goo.gl/rr51ibU6tszb2QeD8?g_st=ic" target="_blank" rel="noopener">Відкрити в Google Maps ↗</a>
+        </article>
+      </div>
+
+      <p class="break__note reveal">* Відстань вказана приблизно від церкви (Миколайчука, 16а).</p>
     </div>
   </section>
 
